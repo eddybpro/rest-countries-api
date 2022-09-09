@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST COUNTRIES API</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Where in the world?</h1>
+      <div class="mode">
+        <i class="fa-solid fa-moon" id="darck"></i>
+
+        <img
+          class="light hidden"
+          id="light"
+          src="images/brightness.svg"
+          alt="brightness"
+        />
+        <p class="mode-para">Dark Mode</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="input-feilds">
+        <div class="country-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Search for a country..."
+          />
+        </div>
+
+        <div class="region-search">
+          <button id="filter-btn">
+            <span class="filter-txt"> Filter by Region </span>
+            <div class="arrow"></div>
+          </button>
+
+          <div class="dropdown hidden">
+            <label for="africa">Africa</label>
+            <input
+              class="option"
+              type="radio"
+              name="region"
+              id="africa"
+              value="africa"
+            />
+
+            <label for="americas">Americas</label>
+            <input
+              class="option"
+              type="radio"
+              name="region"
+              id="americas"
+              value="americas"
+            />
+
+            <label for="asia">Asia</label>
+            <input
+              class="option"
+              type="radio"
+              name="region"
+              id="asia"
+              value="asia"
+            />
+
+            <label for="europe">Europe</label>
+            <input
+              class="option"
+              type="radio"
+              name="region"
+              id="europe"
+              value="europe"
+            />
+
+            <label for="oceania">Oceania</label>
+            <input
+              class="option"
+              type="radio"
+              name="region"
+              id="oceania"
+              value="oceania"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="output-feild"></div>
+    </main>
+
+    <footer>
+      <p class="footer-para">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca"
+          target="_blank"
+          >Frontend Mentor</a
+        >
+        Coded by
+        <a href="https://github.com/eddybpro" target="_blank">Eddybpro</a>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
